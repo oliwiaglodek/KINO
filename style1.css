@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #f8f9fa;
+  font-size: 2rem;
+  /*! chwilowy fotn size */
+}
+
+/* NAV BAR */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4.8rem;
+  height: 8rem;
+  align-items: center;
+  background-color: #9c36b5;
+  /* ! narazie testuje kolor */
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+/* NAV links style */
+/* uzupełnić - dodać link, visited, hoover, active */
+.main-nav-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-img {
+  width: 4rem;
+  transform: rotate(45deg);
+}
