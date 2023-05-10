@@ -30,18 +30,91 @@ body {
 
 .main-nav-list {
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
   list-style: none;
 }
 /* NAV links style */
-/* uzupełnić - dodać link, visited, hoover, active */
-.main-nav-link {
+/*! uzupełnić - dodać link, visited, hoover, active */
+.main-nav-link:link,
+.main-nav-link:visited {
   color: #f8f9fa;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
 }
 
 .nav-img {
   width: 4rem;
   transform: rotate(45deg);
+}
+
+/* Main Section */
+.contianer {
+  background-image: url("./imgs/cinema_background.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Accordion style */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50rem;
+}
+
+.accordion-text {
+  background-color: #9c36b5;
+  padding: 1.6rem 3.2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.accordion-text:hover {
+  background-color: #862e9c;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
+.hidden-box {
+  display: none;
+  background-color: #777777;
+  padding: 0 3.2rem 1.6rem 3.2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.accordion-icon {
+  display: inline-block;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #fff;
+}
+
+/* Carousel style */
+.carousel {
+  width: 38rem;
+}
+
+.tymczasowy {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }

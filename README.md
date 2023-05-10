@@ -12,9 +12,9 @@ Secondary color:
 # Colorpicker:
 
 https://yeun.github.io/open-color/
-Color:#
-Lighter:
-Darker:
+Color:#9c36b5;
+Lighter:#ae3ec9
+Darker:#862e9c
 Grey ( to text): #f8f9fa
 
 # Photos:
