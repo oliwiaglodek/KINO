@@ -4,46 +4,10 @@
     align-items: center;
 
 }
-
-/* NAV BAR */
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 4.8rem;
-    height: 8rem;
-    align-items: center;
-    background-color: #9c36b5;
-    /* ! narazie testuje kolor */
-}
-
-.main-nav-list {
-    display: flex;
-    gap: 5rem;
-    list-style: none;
-}
-/* NAV links style */
-/*! uzupełnić - dodać link, visited, hoover, active */
-.main-nav-link:link,
-.main-nav-link:visited {
-    color: #f8f9fa;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-}
-
-.nav-img {
-    width: 4rem;
-    transform: rotate(45deg);
-}
-
 .screen{
     width: 600px;
     height: 80px;
     background-color: lightslategray;
-    margin: 0 auto;
     margin-bottom: 40px;
 }
 
@@ -56,46 +20,53 @@
 }
 
 .rzad{
-    display: flex;
+    display: inline-block;
     justify-content:center;
 }
 
 .row-number{
     font-size: 12px;
     font-weight: bold;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
 }
 .seat{
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-content: center;
-    margin: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.seat:hover{
+    color: aqua;
+}
+
+.seat.selected {
+    background-color: green;
 }
 
 .seat-circle{
-    width: 30px;
-    height:30px;
-    border-radius:50%;
+    width: 25px;
+    height:25px;
+    border-radius: 80%;
     background-color: #9863d0;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
 
 .seat-number{
+    height: 28px;
+    line-height: 5px;
     font-size: 12px;
-    font-weight: bold;
+    display: flex;
+    margin-left:7px;
 }
 
 .summary-table{
     margin-top:20px;
 }
 
-.summary-table h2{
-    front-size:18px;
-    front-weight: bold;
-}
 .summary-table table {
     width: 100%;
     border-collapse: collapse;
