@@ -1,0 +1,119 @@
+.seat-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* NAV BAR */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4.8rem;
+    height: 8rem;
+    align-items: center;
+    background-color: #9c36b5;
+    /* ! narazie testuje kolor */
+}
+
+.main-nav-list {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+/* NAV links style */
+/*! uzupełnić - dodać link, visited, hoover, active */
+.main-nav-link:link,
+.main-nav-link:visited {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+}
+
+.nav-img {
+    width: 4rem;
+    transform: rotate(45deg);
+}
+
+.screen{
+    width: 600px;
+    height: 80px;
+    background-color: lightslategray;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.ekran{
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+}
+
+.rzad{
+    display: flex;
+    justify-content:center;
+}
+
+.row-number{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.seat{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5px;
+}
+
+.seat-circle{
+    width: 30px;
+    height:30px;
+    border-radius:50%;
+    background-color: #9863d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat-number{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.summary-table{
+    margin-top:20px;
+}
+
+.summary-table h2{
+    front-size:18px;
+    front-weight: bold;
+}
+.summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.summary-table th,
+.summary-table td {
+    padding: 5px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.summary-table th {
+    font-weight: bold;
+}
+
+.summary-table td:last-child {
+    text-align: right;
+}
+
