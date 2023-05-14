@@ -37,13 +37,15 @@ body {
 /*! uzupełnić - dodać link, visited, hoover, active */
 .main-nav-link:link,
 .main-nav-link:visited {
-  color: #f8f9fa;
   text-decoration: none;
-  font-weight: 500;
+  color: #f8f9fa;
+  transition: all 1s;
+  display: inline-block;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
+  transform: rotate(25deg);
 }
 
 .nav-img {
@@ -86,6 +88,7 @@ body {
   border-top-right-radius: 10px;
   transition: all 0.3s;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .accordion-text:hover {
@@ -97,6 +100,21 @@ body {
   flex-direction: column;
   list-style: none;
   gap: 1rem;
+}
+/* Accordion links */
+
+.accordion-link:link,
+.accordion-link:visited {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 1s;
+  display: inline-block;
+}
+
+.accordion-link:hover,
+.accordion-link:active {
+  transform: rotate(5deg);
 }
 .hidden-box {
   display: none;
@@ -117,9 +135,6 @@ body {
   display: block;
 }
 
-.animation {
-  transition: height 0.3s ease;
-}
 /* Carousel style */
 .carousel {
   width: 38rem;
