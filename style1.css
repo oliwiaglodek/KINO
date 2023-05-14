@@ -53,7 +53,12 @@ body {
 
 /* Main Section */
 .contianer {
-  background-image: url("./imgs/cinema_background.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.458),
+      rgba(0, 0, 0, 0.458)
+    ),
+    url("./imgs/cinema_background.jpg");
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -108,13 +113,18 @@ body {
   color: #fff;
 }
 
+.open .hidden-box {
+  display: block;
+}
+
+.animation {
+  transition: height 0.3s ease;
+}
 /* Carousel style */
 .carousel {
   width: 38rem;
 }
 
 .tymczasowy {
-  width: 100%;
-  height: 100%;
-  background-color: red;
+  height: 45rem;
 }
