@@ -135,6 +135,10 @@ body {
   display: block;
 }
 
+.accordion-list-item {
+  padding-top: 0.5rem;
+}
+
 /* Carousel style */
 .carousel {
   /* width: 38rem;
