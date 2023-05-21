@@ -206,3 +206,55 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* ! Footer */
+.footer {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  max-width: 120rem;
+  margin: auto;
+  /* tymczasowy kolor  */
+  color: black;
+  margin-top: 5rem;
+  padding: 5rem 0 5rem 0;
+  justify-items: center;
+  gap: 5rem;
+  border-top: 1px solid #ddd;
+}
+
+.social-links {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.img-footer {
+  width: 10rem;
+  transform: rotate(45deg);
+  margin-bottom: 4rem;
+}
+
+.logo-facebook,
+.logo-instgram,
+.logo-twitter {
+  stroke: red;
+  font-size: 3rem;
+}
+
+.footer-link {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+
+/* Footer kontakt */
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.kontakt:first-child {
+  gap: 4rem;
+}

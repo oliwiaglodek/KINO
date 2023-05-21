@@ -15,23 +15,8 @@ accordionTitles.forEach((accordionTitle) => {
   });
 });
 
-// const slides = document.querySelectorAll(".slide");
-
-// slides.forEach((slide, index) => {
-//   slide.style.transform = `translateX(${index * 100}%)`;
-// });
-
-// let currentSlide = 0;
-// const nextSlide = document.querySelector(".btn-icon");
-
-// nextSlide.addEventListener("click", function () {
-//   currentSlide++;
-
-//   slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-// });
 // //! https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/
-// // To z tego korzystam żeby zrobić ten element - nie działa mi coś jednak"use strict";
-// Select all slides
+
 const slides = document.querySelectorAll(".slide");
 
 // loop through slides and set each slides translateX
@@ -77,5 +62,29 @@ prevSlide.addEventListener("click", function () {
   //   move slide by 100%
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
+
+// Smooth srcolling
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    const href = link.getAttribute("href");
+    if (href !== "#" && !href.startsWith("#")) {
+      return; // Nie wywołuj preventDefault dla linków z innym adresem URL, bez #
+    }
+    e.preventDefault();
+
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
