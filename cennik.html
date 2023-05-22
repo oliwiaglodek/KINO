@@ -28,7 +28,102 @@
       </nav>
     </header>
     <main>
-      <div class="contianer-cennik"></div>
+      <div class="contianer-cennik">
+        <div class="cennik-header">
+          <!-- ! Nie wiem czy tu powinny byc linki czy buttons  <!-- ! Nie wiem czy tu powinny byc linki czy buttons oraz nie wiem czy nie musze zmienić nazwe klasy na te samą żeby zadział kod JS  -->-->
+          <a href="#" class="ceny-bilet-link">Ceny Biletów</a>
+          <a href="#" class="ceny-grupowe-link">Bilety Grupowe</a>
+        </div>
+        <div class="cennik">
+          <div class="rodzaj-biletu">
+            <p class="bilety">Ceny Biletów:</p>
+            <p>Normalny 22 zł</p>
+            <p>Ulgowy (do 26 lat) 18 zł</p>
+            <p>
+              Przypominamy, że w przypadku checi zakupu biletu ulgowego
+              konieczne jest okazanie dokumentu upowarzniającego do zniżki
+            </p>
+          </div>
+          <div class="klub-filmowy">
+            <p>
+              Dla posiadaczy karty <span class="klub">KlubFilmowy</span> cena
+              biletu to jedyne 16 zł
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cennik hidden-cennik">
+        <p>
+          Serdecznie zapraszamy do rezerwowania biletów grupowych! Po więcej
+          informacji zapraszamy do
+          <a href="#kontakt" class="kontakt-cennik">kontaktu!</a>
+        </p>
+        <p>
+          Przypominamy, że istnieje możliwośc wynajęcia sali dla prywatnego
+          seansu. Cena to od 600 zł netto za godzinę - w zależności od terminu.
+        </p>
+      </div>
     </main>
+
+    <!-- ! FOOTER -->
+    <footer>
+      <div class="footer">
+        <div class="logo-footer">
+          <img
+            src="./imgs/camera-roll-icon.svg"
+            alt="Camera icon"
+            class="img-footer"
+          />
+          <ul class="social-links">
+            <li class="footer-li">
+              <a href="#" class="footer-link"
+                ><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon
+                  name="logo-instagram"
+                  class="logo-instgram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="kontakt" id="kontakt">
+          <p class="kontakt-text">Skontaktuj się z nami!</p>
+          <p class="kontakt-adres">ul. Kinowa 55 Poznań</p>
+          <p class="tel"><a href="tel:111222333 ">111 222 333</a></p>
+          <a href="mailto:Kino@wp.com">Kino@wp.com</a>
+        </div>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36026.86105010261!2d86.89636727392538!3d27.991658608874886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMt%20Everest!5e0!3m2!1sen!2spl!4v1684358366489!5m2!1sen!2spl"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <!--! JS file -->
+    <script src="./JS.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

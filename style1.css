@@ -208,6 +208,9 @@ body {
 }
 
 /* ! Footer */
+footer {
+  background-color: #f1f3f5;
+}
 .footer {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 1fr;
@@ -215,7 +218,7 @@ body {
   margin: auto;
   /* tymczasowy kolor  */
   color: black;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   padding: 5rem 0 5rem 0;
   justify-items: center;
   gap: 5rem;
@@ -257,4 +260,73 @@ body {
 
 .kontakt:first-child {
   gap: 4rem;
+}
+/* ! Strona CENNIk */
+.ceny-bilet-link:link,
+.ceny-grupowe-link:link,
+.ceny-bilet-link:visited,
+.ceny-grupowe-link:visited {
+  text-decoration: none;
+  color: #9c36b5;
+  transition: all 1s;
+  display: inline-block;
+  text-decoration: none;
+}
+.ceny-bilet-link:hover,
+.ceny-grupowe-link:hover,
+.ceny-bilet-link:active,
+.ceny-grupowe-link:active {
+  transform: rotate(25deg);
+  scale: 1.5;
+}
+
+.cennik-header {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.contianer-cennik,
+.cennik {
+  color: #777777;
+  max-width: 120rem;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cennik {
+  display: flex;
+  margin-top: 5rem;
+  line-height: 1.5;
+  gap: 10rem;
+}
+.rodzaj-biletu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bilety {
+  font-weight: 800;
+  color: #9c36b5;
+}
+
+.klub {
+  font-weight: 600;
+}
+.hidden-cennik {
+  display: none;
+}
+.kontakt-cennik:link,
+.kontakt-cennik:visited {
+  text-decoration: none;
+  color: #9c36b5;
+  transition: all 1s;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.kontakt-cennik:hover,
+.kontakt-cennik:active {
+  transform: rotate(25deg);
+  scale: 1.5;
 }

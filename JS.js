@@ -1,4 +1,5 @@
 "use strict";
+// Kod do obsługi accordion
 const accordionTitles = document.querySelectorAll(".item");
 
 accordionTitles.forEach((accordionTitle) => {
