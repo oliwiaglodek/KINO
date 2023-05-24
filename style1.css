@@ -263,8 +263,8 @@ footer {
 }
 /* ! Strona CENNIk */
 .ceny-bilet-link:link,
-.ceny-grupowe-link:link,
 .ceny-bilet-link:visited,
+.ceny-grupowe-link:link,
 .ceny-grupowe-link:visited {
   text-decoration: none;
   color: #9c36b5;
@@ -273,8 +273,8 @@ footer {
   text-decoration: none;
 }
 .ceny-bilet-link:hover,
-.ceny-grupowe-link:hover,
 .ceny-bilet-link:active,
+.ceny-grupowe-link:hover,
 .ceny-grupowe-link:active {
   transform: rotate(25deg);
   scale: 1.5;
@@ -285,8 +285,7 @@ footer {
   justify-content: center;
   gap: 5rem;
 }
-.contianer-cennik,
-.cennik {
+.contianer-cennik {
   color: #777777;
   max-width: 120rem;
   margin: auto;
@@ -294,7 +293,8 @@ footer {
   margin-bottom: 10rem;
 }
 
-.cennik {
+.cennik1,
+.cennik2 {
   display: flex;
   margin-top: 5rem;
   line-height: 1.5;
@@ -313,9 +313,11 @@ footer {
 .klub {
   font-weight: 600;
 }
+
 .hidden-cennik {
   display: none;
 }
+
 .kontakt-cennik:link,
 .kontakt-cennik:visited {
   text-decoration: none;
@@ -329,4 +331,14 @@ footer {
 .kontakt-cennik:active {
   transform: rotate(25deg);
   scale: 1.5;
+}
+
+.cennik1,
+.cennik2 {
+  min-height: 21rem;
+  color: #777777;
+  max-width: 120rem;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
