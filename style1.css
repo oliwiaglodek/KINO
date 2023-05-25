@@ -379,14 +379,9 @@ footer {
   .wraper {
     width: 30rem;
   }
-  .social-links {
-  }
 }
 /* 850 /16 = 53 */
 @media (max-width: 53rem) {
-  .map {
-    /* justify-self: start; */
-  }
   .logo-footer {
     justify-self: center;
   }
