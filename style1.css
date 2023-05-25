@@ -223,6 +223,7 @@ footer {
   justify-items: center;
   gap: 5rem;
   border-top: 1px solid #ddd;
+  align-items: center;
 }
 
 .social-links {
@@ -341,4 +342,72 @@ footer {
   margin: auto;
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+/* !MOBILE DESIGN */
+/* 1200 /16 = 75rem */
+@media (max-width: 75rem) {
+  .contianer {
+    padding: 0 2rem 0 2rem;
+  }
+  .footer {
+    padding: 4rem 2rem 0 2rem;
+  }
+}
+
+/* 1000 /16 = 63 rem */
+@media (max-width: 63rem) {
+  .footer {
+    padding: 4rem 2rem 0 4rem;
+  }
+}
+
+/* 900 /16 = 56 rem */
+@media (max-width: 56rem) {
+  body {
+    font-size: 1.8rem;
+  }
+  .footer {
+    padding: 4rem 4rem 4rem 4rem;
+    grid-template-columns: 1fr 1fr 4fr;
+    gap: 4rem;
+  }
+  .map {
+    width: 100%;
+  }
+  .carousel,
+  .wraper {
+    width: 30rem;
+  }
+  .social-links {
+  }
+}
+/* 850 /16 = 53 */
+@media (max-width: 53rem) {
+  .map {
+    /* justify-self: start; */
+  }
+  .logo-footer {
+    justify-self: center;
+  }
+  .social-links {
+    gap: 1rem;
+  }
+}
+/* 652 / 16 = 41 */
+@media (max-width: 41rem) {
+  .carousel,
+  .wraper {
+    width: 25rem;
+  }
+  .accordion {
+    font-size: 1.5rem;
+  }
+  .footer {
+    gap: 2rem;
+    padding: 2rem 2rem 2rem 4rem;
+  }
+  .img-footer {
+    width: 8rem;
+  }
 }
