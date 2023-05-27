@@ -119,3 +119,17 @@ p.text span {
     color: #3de83b;
     font-size: 2rem;
 }
+
+.button{
+    background-color: #b3f3a6;
+    color: rgb(7, 7, 7);
+    padding: 1rem 3rem;
+    border-radius: 0.313rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.125rem 0.125rem 0.313rem rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    background-color: #3de83b;
+}
