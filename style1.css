@@ -351,6 +351,11 @@ footer {
   .footer {
     padding: 4rem 2rem 0 2rem;
   }
+  .contianer-cennik,
+  .cennik1,
+  .cennik2 {
+    padding: 0 4rem 0 4rem;
+  }
 }
 
 /* 1000 /16 = 63 rem */
