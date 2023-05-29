@@ -25,7 +25,6 @@ body {
   height: 8rem;
   align-items: center;
   background-color: #9c36b5;
-  /* ! narazie testuje kolor */
 }
 
 .main-nav-list {
@@ -33,8 +32,7 @@ body {
   gap: 5rem;
   list-style: none;
 }
-/* NAV links style */
-/*! uzupełnić - dodać link, visited, hoover, active */
+
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
@@ -404,5 +402,52 @@ footer {
   }
   .img-footer {
     width: 8rem;
+  }
+  .accordion-text {
+    padding: 1.2rem 3rem;
+  }
+  .hidden-box {
+    padding: 0 1.6rem 0.8rem 1.6rem;
+  }
+}
+
+/* 567 */
+@media (max-width: 36rem) {
+  .accordion {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+  body {
+    font-size: 1.4rem;
+  }
+  .accordion-text {
+    padding: 0.8rem 1.6rem;
+  }
+  .carousel,
+  .wraper {
+    width: 23rem;
+  }
+}
+
+/* 500 */
+@media (max-width: 31rem) {
+  body {
+    overflow: scroll;
+  }
+  .contianer {
+    padding-top: 2rem;
+    flex-direction: column;
+    height: 75rem;
+    gap: 2rem;
+  }
+
+  .accordion {
+    align-items: center;
+  }
+  .item {
+    width: 70%;
+  }
+  .footer {
+    grid-template-columns: 1fr;
   }
 }
