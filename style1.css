@@ -451,3 +451,22 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* 450 */
+@media (max-width: 28rem) {
+  .main-nav-list {
+    gap: 2rem;
+  }
+}
+
+/* 380 */
+@media (max-width: 23.75rem) {
+  .main-nav-list {
+    align-items: center;
+  }
+  .header {
+    gap: 2rem;
+  }
+}
+
+/* !Media zrobione do 300px */
