@@ -341,7 +341,17 @@ footer {
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
-
+/* !repertuar */
+.tekst {
+  align-self: start;
+}
+.repertuar-tekst {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+.opis-repertuar {
+  margin-top: 1rem;
+}
 /* !MOBILE DESIGN */
 /* 1200 /16 = 75rem */
 @media (max-width: 75rem) {
