@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style1.css" />
-    <title>Zarządzaj pracownikami</title>
+    <title>Zarządzaj filmami</title>
   </head>
   <body>
     <header class="header">
@@ -37,29 +37,40 @@
         <span class="rola-panel">administratorski</span>
       </p>
       <p class="admin-tekst">
-        Jesteś w panelu zarządzania pracownikami. Aby wrócić do menu wyboru
-        klknij <a href="./admin.html" class="admin-link"> TUTAJ.</a> Poniżej
-        tabela pracowników:
+        Jesteś w panelu zarządzania filmami. Aby wrócić do menu wyboru klknij
+        <a href="./admin.html" class="admin-link"> TUTAJ.</a> Poniżej tabela
+        informacji o filmach:
       </p>
       <table>
         <tr>
-          <th>Imię</th>
-          <th>Nazwisko</th>
+          <th>Tytuł</th>
+          <th>Opis</th>
           <th>ID</th>
           <!-- ! Tu trzeba podbpiąć baze danych . Poniżej przykałd-->
         </tr>
         <tr>
-          <td>Jan</td>
-          <td>Kopeć</td>
+          <td>Władca Pierścieni: Dwie Wieże</td>
+          <td>
+            Władca Pierścieni: Dwie Wieże to epicki film z 2002 roku, będący
+            drugą częścią trylogii opartej na powieści J.R.R. Tolkiena.
+            Kontynuując historię, film przedstawia dalsze przygody bractwa
+            Pierścienia, które zostaje rozdzielone, a ich walka przeciwko
+            Sauronowi nabiera tempa. Bohaterowie stają przed coraz większymi
+            wyzwaniami, a los Śródziemia wciąż wisi na włosku. "Władca
+            Pierścieni: Dwie Wieże" zapewnia niezapomniane efekty specjalne,
+            pełne akcji sekwencje oraz wspaniałą muzykę Howarda Shore'a.
+            Reżyseria Petera Jacksona przekształca tę opowieść w kinową podróż,
+            która porusza zarówno serce, jak i wyobraźnię widza.
+          </td>
           <td>1</td>
         </tr>
       </table>
       <!-- ! NIE wiem jak to rozwiązać, bo szyper w PHP zroibł to tak: https://github.com/szyper/wsb_zIinz_2_K27_Inf-W08-/blob/main/3_db/4_db_table_delete_add.php czyli jakby po kliknięciu w link odpala się skrypt php -->
       <button class="btn">
-        <a href="#" class="admin-link">Dodaj pracownika </a>
+        <a href="#" class="admin-link">Dodaj film </a>
       </button>
       <button class="btn">
-        <a href="#" class="admin-link">Usuń pracownika </a>
+        <a href="#" class="admin-link">Usuń film </a>
       </button>
     </main>
     <!--! JS file -->

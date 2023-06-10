@@ -389,7 +389,11 @@ td {
   text-align: center;
   border-collapse: collapse;
   padding: 1rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 1rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
 }
 
 /* !MOBILE DESIGN */
