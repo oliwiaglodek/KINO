@@ -342,9 +342,10 @@ footer {
   margin-bottom: 10rem;
 }
 /* !repertuar */
-.tekst {
-  align-self: start;
+.repertuarContainer {
+  flex-direction: column;
 }
+
 .repertuar-tekst {
   margin-top: 5rem;
   font-size: 2.5rem;
@@ -447,6 +448,12 @@ td {
     gap: 1rem;
   }
 }
+/* 730 /16 = 45 */
+@media (max-width: 46rem) {
+  .main-nav-list {
+    gap: 2rem;
+  }
+}
 /* 652 / 16 = 41 */
 @media (max-width: 41rem) {
   .carousel,
@@ -472,7 +479,7 @@ td {
 }
 
 /* 567 */
-@media (max-width: 36rem) {
+@media (max-width: 37.5rem) {
   .accordion {
     font-size: 1.2rem;
     max-width: 90%;
@@ -486,6 +493,9 @@ td {
   .carousel,
   .wraper {
     width: 23rem;
+  }
+  .header {
+    padding: 0 2.4rem;
   }
 }
 
