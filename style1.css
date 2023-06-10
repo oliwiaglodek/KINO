@@ -379,6 +379,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 /* ! Zarzązaj pracownikami */
 table,
