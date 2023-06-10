@@ -352,6 +352,46 @@ footer {
 .opis-repertuar {
   margin-top: 1rem;
 }
+
+/* ! ADMIN PANEL  */
+.admin-main {
+  color: #777777;
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+}
+.admin-ul {
+  list-style: none;
+}
+.admin-link:link,
+.admin-link:visited {
+  text-decoration: none;
+  color: #9c36b5;
+  display: inline-block;
+  text-decoration: none;
+}
+.rola-panel {
+  color: #9c36b5;
+}
+.rola:link,
+.rola:visited {
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+/* ! Zarzązaj pracownikami */
+table,
+tr,
+th,
+td {
+  border: solid 1px grey;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
 /* !MOBILE DESIGN */
 /* 1200 /16 = 75rem */
 @media (max-width: 75rem) {

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style1.css" />
-    <title>KINO X</title>
+    <title>Zarządzaj pracownikami</title>
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,7 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <p class="rola">Admin</p>
+            <a href="./admin.html" class="rola">Admin</a>
           </li>
         </ul>
       </nav>
@@ -37,22 +37,23 @@
         <span class="rola-panel">administratorski</span>
       </p>
       <p class="admin-tekst">
-        Wybierając opcje Zarząadzaj pracownikami możesz dodawać i usuwać
-        pracowników a także wyświetlać aktualną liste pracowników. opcja
-        Zarząadzaj filmami umożliwia dodawanie, usuwanie a także przeglądanie
-        filmów
+        Jesteś w panelu zarządzania pracownikami. Aby wrócić do menu wyboru
+        klknij <a href="./admin.html" class="admin-link"> TUTAJ.</a> Poniżej
+        tabela pracowników:
       </p>
-      <ul class="admin-ul">
-        <!-- ! DODAJ LINKI  -->
-        <li class="admin-li">
-          <a href="./zarządzajPracownikami.html" class="admin-link"
-            >Zarządzaj pracownikami</a
-          >
-        </li>
-        <li class="admin-li">
-          <a href="#" class="admin-link">Zarządzaj filmami</a>
-        </li>
-      </ul>
+      <table>
+        <tr>
+          <th>Imię</th>
+          <th>Nazwisko</th>
+          <!-- ! Tu trzeba podbpiąć baze danych . Poniżej przykałd-->
+        </tr>
+        <tr>
+          <td>Jan</td>
+          <td>Kopeć</td>
+        </tr>
+      </table>
+      <a href="">Dodaj pracownika </a>
+      <a href="">Usuń pracownika </a>
     </main>
     <!--! JS file -->
     <script src="./JS.js"></script>
