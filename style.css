@@ -52,6 +52,10 @@ body {
   background-color: #3de83b;
 }
 
+.seat.selected2 {
+  background-color: #3de83b;
+}
+
 .seat.occupied {
   background-color: #ef2727;
 }

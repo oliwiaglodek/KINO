@@ -8,18 +8,21 @@ let ticketPrice = 10; // Cena biletu
 
 // Aktualizacja liczby wybranych miejsc i kosztu
 function updateSelectedCount() {
-  const selected = document.querySelectorAll(".seat.selected");
+  const selected = document.querySelectorAll(".seat.selected:not(.showcase)");
   const selectedSeatsCount = selected.length;
-
+  
   count.innerText = selectedSeatsCount;
   total.innerText = selectedSeatsCount * ticketPrice;
 }
 
 // Obsługa kliknięcia na miejsce
 function seatClickHandler() {
-  this.classList.toggle("selected");
-
-  updateSelectedCount();
+  if(!this.classList.contains("occupied")){
+    if (!this.closest(".showcase")){
+      this.classList.toggle("selected");
+      updateSelectedCount();
+    }    
+  }    
 }
 
 // Dodajemy nasłuchiwanie kliknięcia dla każdego miejsca
